@@ -1,0 +1,51 @@
+<!--- Objetivo: construir um contêiner/wrap com: 80% horizontal e centralizado.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+
+    <!-- Definindo as características das classes e ID definidos, em CSS --->
+        <style>
+            .wrap {
+                width: 80%;
+                height: 100px;
+                border: #85c6db dotted 2px;
+                margin: auto;   
+            }
+
+            .wrap p{
+                font-size: 12px;
+                text-align: center;
+                color: #85c6db;
+                padding-top: 28px;
+                
+            }
+
+            #outside {
+                width: 80%;
+                height: 10px;
+                border: 0px;
+                margin: auto;
+
+                font-size: 10px;
+                text-align: right;
+                color: #85c6db;
+                padding-top: 10px;
+            }
+        </style>
+
+    </head>
+
+    <body>
+            <div class='wrap'>
+                <p>WRAP: CONTEÚDO CENTRALIZADO NO NAVEGADOR <b>(Entrega 1)</b></p> <!-- Texto central, classe definida --->
+            </div>
+
+            <div id="outside">
+                <b>WIDTH: 80%</b> <!-- Texto fora do wrap, ID definido --->
+            </div>
+
+    </body>
+
+</html>
