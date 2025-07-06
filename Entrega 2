@@ -1,0 +1,76 @@
+<!--- Objetivo: construir um cabeçalho.-->
+<!-- Obs.: para essa entrega, retirei os elementos de texto da entrega anterior --->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+
+        <style>
+            /* Wrap box (entrega 1) */
+            .wrap {
+                width: 80%;
+                height: 100px;
+                border: #85c6db dotted 2px;
+                margin: auto;   
+                align-content: center;
+            }
+
+          /*Botões internos (entrega 2)*/
+            .container {
+                margin: auto;
+                display: flex;
+                width: 93%;
+                height: 75%;
+                gap: 30px;
+                flex-wrap: wrap;
+                /*justify-content: flex-end;*/ /*substituído pelo "space"*/
+                align-items: center;
+             }
+
+            .logo{
+                height: 85%;
+                width: 150px;
+                padding: 5px;
+                background-color: #85c6db;
+                color: #00779e;
+                
+                text-align: center;
+                align-content: center;
+            }
+
+            .item{
+                border: #85c6db dotted 2px;
+                color: #85c6db;
+                width: 75px;
+                height: 95%;
+                   
+                text-align: center;
+                align-content: center;
+            }
+
+            /*espaço entre logo e botões*/
+            .space{
+                flex-grow: 1;
+            }
+        </style>
+
+    </head>
+
+        <body>
+                <div class='wrap'>
+                    <div class='container'> <!-- Flex com logo + botões dentro do wrap inicial --->
+
+                    <div class="logo">Logo</div>
+                    <div class="space"></div>  <!-- espaço invisível entre logo e botões --->
+                    <div class="item">menu 1</div>
+                    <div class="item">menu 2</div>
+                    <div class="item">menu 3</div>
+                    <div class="item">menu 4</div>
+
+                    </div> 
+                </div>
+
+        </body>
+
+</html>
