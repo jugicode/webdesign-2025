@@ -1,0 +1,194 @@
+<!--- Objetivo: adequar para responsatividade.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8" />
+
+        <style>
+            /*Container maior e geral.*/
+            .section-box{ 
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 25px;
+
+                width: 80%; 
+                height: 96vh;
+                border: #52c7ee dotted 2px;
+                margin: auto; 
+                
+                align-items: center;
+                align-content: center;
+            }
+
+            /*Seção 1, contendo cabeçalho.*/
+            .section-1{
+                display: flex;
+                gap: 30px;
+                flex-wrap: nowrap;
+                
+                width: 100%;
+                height: 110px;
+                border: #376ce0 dashed 2px;
+                margin: auto; 
+
+                align-items: center;
+            }
+
+                /*Cabeçalho seção 1 (entrega 2).*/
+                .logo{
+                    height: 70%;
+                    width: 150px;
+                    padding: 4px;
+                    margin-left: 20px;
+                    background-color: #52c7ee;
+                    color: #00779e;
+                    
+                    text-align: center;
+                    align-content: center;
+                }
+
+                /*Botões internos (entrega 2).*/
+                .item{
+                    width: 75px;
+                    height: 70%;
+                    border: #52c7ee dotted 2px;
+                    color: #52c7ee;
+                    
+                    text-align: center;
+                    align-content: center;
+                }
+
+                /*Detalhe de margem direita no Botão 4.*/
+                .item-4{
+                    margin-right: 20px;
+                }
+
+                /*Espaço entre logo e botões.*/
+                .space{
+                    flex-grow: 1;
+                }
+
+
+            /*Seção 2, contendo blocos de conteúdos (entrega 4)*/
+            .section-2{
+                display: flex;
+                gap: 30px;
+                flex-wrap: wrap;
+
+                flex-grow: 1;
+                width: 100%;
+                border: #376ce0 dashed 2px;
+                margin: auto; 
+                align-items: top;
+                align-content: center;
+                
+            }
+
+                /*Blocos seção 2 (entrega 4)*/
+                .block-1{
+                    width: 20%;
+                    height: 50%;
+                    border: #52c7ee dotted 2px;
+                    margin-left: 30px;
+                }
+
+                .block-2{
+                    width: 30%;
+                    height: 75%;
+                    border: #52c7ee dotted 2px;
+
+                    flex-grow: 2;
+                    text-align: center;
+                    align-content: center;
+                }
+
+                .block-3{
+                    width: 20%;
+                    height: 50%;
+                    border: #52c7ee dotted 2px;
+                    margin-right: 30px;
+                }
+
+
+            .section-3{
+                flex-grow: 2;
+                width: 100%; 
+                border: #376ce0 dashed 2px;
+                 
+            }
+
+
+            @media screen and (max-width: 800px) {  /*Adaptação para telas*/
+
+                .section-box {
+                    width: 80%;
+                    height: auto;
+                    min-height: 96vh;
+                }
+
+                .section-1{
+                    gap: 10px;
+                }
+
+                .logo{
+                    margin-right: 20px;
+                }
+
+                .item-3{
+                    margin-right: 20px;
+                }
+
+                .item-4{
+                    margin-right: 0px;
+                    display: none;
+                }
+
+                .space{
+                    gap: 0;
+                    padding: 0%;
+                    min-width: 1;
+                    width: auto;
+                }
+
+                .section-2{
+                height: 0px;
+                }
+
+                .block-2{
+                    margin-right: 30px;
+                }
+
+
+                .block-3 {
+                display: none;
+                }
+
+            }
+        </style>
+    </head>
+    
+        <body>
+                <div class='section-box'> <!-- Caixa geral. -->
+
+                    <div class='section-1'> <!-- Seção 1 com cabeçalho. -->
+                        <div class="logo"></div>
+                        <div class="space"></div>  <!-- Espaço invisível entre logo e botões. --->
+                        <div class="item">menu 1</div>
+                        <div class="item">menu 2</div>
+                        <div class="item item-3">menu 3</div>
+                        <div class="item item-4">menu 4</div>
+                    </div> 
+
+                    <div class='section-2'>  <!-- Seção central. -->
+                        <div class="block-1"></div>
+                        <div class="block-2"></div>
+                        <div class="block-3"></div>
+                    </div>
+
+                    <div class='section-3'></div>
+
+                </div>
+        </body>
+</html>
